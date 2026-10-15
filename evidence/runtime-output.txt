@@ -1,0 +1,20 @@
+GET /api/overview -> HTTP 200
+RabbitMQ réel : 3.12.9
+POST /api/definitions -> HTTP 204
+GET /api/exchanges/%2F/2iteExchange -> HTTP 200
+GET /api/queues/%2F/2iteQueue -> HTTP 200
+GET /api/bindings/%2F/e/2iteExchange/q/2iteQueue -> HTTP 200
+Exchange direct durable : 2iteExchange
+Queue classique durable : 2iteQueue
+Binding : rk.2ite
+DELETE /api/queues/%2F/2iteQueue/contents -> HTTP 204
+POST /api/exchanges/%2F/2iteExchange/publish -> HTTP 200
+POST /api/exchanges/%2F/2iteExchange/publish -> HTTP 200
+Clé correcte : message routé ; clé différente : message non routé
+POST /api/queues/%2F/2iteQueue/get -> HTTP 200
+Lecture avec remise en queue : Bonjour, c'est Imrane depuis RabbitMQ.
+POST /api/queues/%2F/2iteQueue/get -> HTTP 200
+POST /api/queues/%2F/2iteQueue/get -> HTTP 200
+Acquittement réel : message retiré ; lecture suivante vide.
+POST /api/exchanges/%2F/2iteExchange/publish -> HTTP 200
+VÉRIFICATION RÉUSSIE : topologie, routage, stockage, requeue et consommation.

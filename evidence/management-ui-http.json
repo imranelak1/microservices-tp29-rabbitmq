@@ -1,0 +1,117 @@
+[
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/whoami",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/overview",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/extensions",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/overview?lengths_age=60&lengths_incr=5&msg_rates_age=60&msg_rates_incr=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/overview?lengths_age=60&lengths_incr=5&msg_rates_age=60&msg_rates_incr=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/overview?lengths_age=60&lengths_incr=5&msg_rates_age=60&msg_rates_incr=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/overview?lengths_age=60&lengths_incr=5&msg_rates_age=60&msg_rates_incr=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/nodes",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/queues?page=1&page_size=100&name=&use_regex=false&pagination=true",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/vhosts",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/queues/%2F/2iteQueue?lengths_age=60&lengths_incr=5&msg_rates_age=60&msg_rates_incr=5&data_rates_age=60&data_rates_incr=5",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "http://127.0.0.1:19629/api/queues/%2F/2iteQueue/bindings",
+    "status": 200
+  },
+  {
+    "method": "POST",
+    "url": "http://127.0.0.1:19629/api/queues/%2F/2iteQueue/get",
+    "status": 200
+  }
+]

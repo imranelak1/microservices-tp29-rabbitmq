@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "delivery_mode": 2
+  },
+  "routing_key": "rk.2ite",
+  "payload": "Bonjour, c'est Imrane depuis RabbitMQ.",
+  "payload_encoding": "string"
+}

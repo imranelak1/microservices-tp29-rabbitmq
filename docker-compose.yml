@@ -1,0 +1,17 @@
+name: course7-tp29
+services:
+  rabbitmq:
+    image: rabbitmq:3.12.9-management
+    hostname: course7-rabbit
+    ports: ["127.0.0.1:15629:5672", "127.0.0.1:19629:15672"]
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBIT_USER:-student}
+      RABBITMQ_DEFAULT_PASS: ${RABBIT_PASSWORD:-student-lab-only}
+    volumes: ["rabbit_data:/var/lib/rabbitmq"]
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+volumes:
+  rabbit_data:

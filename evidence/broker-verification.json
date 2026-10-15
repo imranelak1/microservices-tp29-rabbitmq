@@ -1,0 +1,42 @@
+{
+  "rabbitmq_version": "3.12.9",
+  "exchange": {
+    "name": "2iteExchange",
+    "type": "direct",
+    "durable": true
+  },
+  "queue": {
+    "name": "2iteQueue",
+    "type": "classic",
+    "durable": true
+  },
+  "routing_key": "rk.2ite",
+  "peek": [
+    {
+      "payload_bytes": 38,
+      "redelivered": false,
+      "exchange": "2iteExchange",
+      "routing_key": "rk.2ite",
+      "message_count": 0,
+      "properties": {
+        "delivery_mode": 2
+      },
+      "payload": "Bonjour, c'est Imrane depuis RabbitMQ.",
+      "payload_encoding": "string"
+    }
+  ],
+  "consumed": [
+    {
+      "payload_bytes": 38,
+      "redelivered": true,
+      "exchange": "2iteExchange",
+      "routing_key": "rk.2ite",
+      "message_count": 0,
+      "properties": {
+        "delivery_mode": 2
+      },
+      "payload": "Bonjour, c'est Imrane depuis RabbitMQ.",
+      "payload_encoding": "string"
+    }
+  ]
+}

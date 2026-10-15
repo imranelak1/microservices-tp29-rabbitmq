@@ -1,0 +1,32 @@
+{
+  "exchanges": [
+    {
+      "name": "2iteExchange",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "queues": [
+    {
+      "name": "2iteQueue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "2iteExchange",
+      "vhost": "/",
+      "destination": "2iteQueue",
+      "destination_type": "queue",
+      "routing_key": "rk.2ite",
+      "arguments": {}
+    }
+  ]
+}
